@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
 </head>
-
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
-</body>
+    <div id="main-container-div">
 
+        <div class="header">
+        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <a href="index.html" class="logo">ScriBBler</a>
+                <div class="header-right">
+                    <a id="signin" href="#contact" onclick="signinmodal();">Sign In</a>
+                    <span></span>
+                    <a id="signup" href="#home" onclick="signupmodal();">Sign Up</a>
+                </div>
+            </div>
+            <p class="subheader">Explore, Imagine, Create</p>
+        </div>
+
+        <div class="postButtons" id="postbutton">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <a href="html/bloglist.html"><button class="postbutton">All Posts</button></a> &nbsp;
+            <button class="postbutton" onclick="addPost();">Create Post</button>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign In modal here -->
+        <div id="myModal1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close1" class="close">&times;</span>
+                <h2 class="title1">Welcome Back!</h2>
+                <hr size="4">
+                <form action="#" method="post">
+                    <div>
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pass" required>
+
+                        <button id="submit2">Sign In</button>
+                        <br>
+                        <b><span><p align="center">Not a member?&nbsp;<a id="memberoption" onclick="signupmodalMember();">Sign In</a></span></p></b>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="close2" class="close">&times;</span>
+            <h2 class="title1">Get Started</h2>
+            <hr size="4">
+            <form action="#" method="post">
+            <div>
+                <label><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pass" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="cpass" required>
+                <button id="submit">Sign Up</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <div>
+    	<!-- Insert code for Create Post modal here -->
+        <div id="postModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="close3" class="close">&times;</span>
+                <h2 class="title1">Pen Your Post</h2>
+                <form action="#" method="post">
+                    <div id="postmodalfield">
+                        <label><b>Title</b></label><br>
+                        <input type="text" name="email" width="30%">
+                        <br>
+                        <label><b>Content</b></label><br>
+                        <textarea name="content"></textarea>
+                        <br><br>
+                        <center><button id="create">Create</button></center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
 </html>
