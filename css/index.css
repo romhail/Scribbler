@@ -1,0 +1,59 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: cover;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+hr {
+   border: none;
+   height: 1px;
+   /* Set the hr color */
+   color: #333; /* old IE */
+   background-color: #333; /* Modern Browsers */
+}
+/* Add a blue text color to links */
+a {
+   color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.postbutton{
+   background-color: rgb(231, 188, 18);
+   border: 2px solid grey;
+   border-radius: 0px;
+   width: 100px;
+   height: 30px;
+   text-align: center;
+   font-family: Arial;
+   font-weight: bold;
+   box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+}
+#postbutton{
+   position: absolute;
+   left: 43%;
+   top: 45%;
+}
+#postmodalfield input{
+   width: 30%;
+}
+#postmodalfield textarea{
+   height: 500px;
+   background-color: #f1f1f1 ;
+   width: 100%;
+}
+#create{
+   width: 30%;
+   background-color: #4CAF50;
+   color: white;
+   height: 50px;
+   font-weight: bold;
+   font-size: 20px;
+}

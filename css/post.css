@@ -1,0 +1,79 @@
+body{
+    color: black;
+}
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.blogContent{
+
+}
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.buttonstyle{
+    background-color: #e42c64;
+    height: 40px;
+    width: 70px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+#section1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.buttonLike{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    text-align: center;
+    cursor: pointer;
+}
+.buttonComment{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 1px solid #e42c64;
+    box-shadow: 1px 5px 9px rgba(243, 62, 125, 0.47);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+.commentbox{
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+}
+.commentbox > div {
+    background-color: white;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 75px;
+    font-size: 25px;
+    padding: 10px 10px;
+}
